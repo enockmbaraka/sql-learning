@@ -1,8 +1,8 @@
-USE WSDA_Music;
+USE WSDAMusic;
  
 SELECT * 
 
-FROM Invoice
+FROM invoices
 
 LIMIT 5;
 
@@ -14,7 +14,7 @@ ROUND(AVG(Total),2) AS AvgByCity
 
 FROM 
 
-Invoice
+invoices
 
 WHERE
 
@@ -29,4 +29,3 @@ HAVING AVG(Total) > 5
 ORDER By 
 
 BillingCity;
- 

@@ -2,12 +2,12 @@
 
 SHOW DATABASES;
 
-USE WSDA_Music;
+USE WSDAMusic;
 
 SHOW TABLES;
 
 SELECT * 
-FROM Track
+FROM tracks
 LIMIT 5;
 
 /* This query generates a report listing track names alongside thier unit prices.
@@ -15,6 +15,6 @@ LIMIT 5;
 SELECT
 t.Name AS 'Track Name',
 t.UnitPrice AS Price
-FROM Track AS t
+FROM tracks AS t
 ORDER BY t.Name
 LIMIT 20;

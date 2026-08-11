@@ -1,14 +1,14 @@
-USE WSDA_Music;
+USE WSDAMusic;
 SHOW TABLES;
  
 SELECT * 
-FROM Invoice
+FROM invoices
 LIMIT 5;
  
 SELECT 
 BillingCity, 
 ROUND(AVG(Total),2) AS AvgByCity
-FROM Invoice
+FROM invoices
 WHERE BillingCity LIKE'L%'
 GROUP BY 
 BillingCity

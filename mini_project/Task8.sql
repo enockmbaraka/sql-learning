@@ -1,14 +1,14 @@
-USE WSDA_Music;
+USE WSDAMusic;
  
 SELECT * 
-FROM Invoice
+FROM invoices
 LIMIT 5;
 SELECT 
 BillingCountry,
 BillingCity,
 ROUND(AVG(Total),2) AS AvgByCity
 FROM 
-Invoice
+invoices
 GROUP BY 
 BillingCountry,
 BillingCity
