@@ -4,6 +4,14 @@ DATETIME FUNCTIONS
 =============================================================
 */
 
+
+/* DATE FORMATS
+1. YYYY-MM-DD : International Standard ISO
+2. DD-MM-YYYY : European Standard
+3. MM-DD-YYYY : USA Standard
+*/
+
+
 /* 
 =============================================================
 we will use the Water_consumption_data_sa table that represents the amount of water (liters) consumed within South African cities,
